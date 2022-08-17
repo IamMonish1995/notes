@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .nav {
+        grid-area: 1 / 1 / 2 / 4;
+      }
+      .leftside {
+        grid-area: 2 / 1 / 4 / 2;
+      }
+      .footer {
+        grid-area: 3 / 2 / 4 / 4;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 200px auto 200px;
+        gap: 10px;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+      .grid-container div{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="nav">nav</div>
+      <div class="leftside">left sidebar</div>
+      <div class="main">main</div>
+      <div class="rightside">right sidebar</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
