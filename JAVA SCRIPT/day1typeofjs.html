@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- inline js -->
+    <button id="btn1" onclick="alert('Alert from Inline js')" >inline js</button>
+    
+    <button id="btn2" onmouseleave="myInternalFun()">internal js</button>
+    
+    <button id="btn3" onmouseover="myExternalFun()" >external js</button>
+
+    <!-- internal javascript -->
+    <script> 
+        function myInternalFun(){
+            alert("Alert From Internal JS")
+        }
+    </script>
+    <!-- external js -->
+    <script src="day1externaljs.js"></script>
+</body>
+</html>
