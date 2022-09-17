@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="element" onclick="myfun1()">click for output1</div>
+   
+    <div id="element2" onclick="myfun2()">click for output2</div>
+  
+    <div id="element3" onclick="myfun3()">click for output3</div>
+   
+    <div id="element4" onclick="myfun4()">click for output4</div>
+
+
+
+    <script>
+        function myfun1(){
+            alert('output method 1 as alert')
+        }
+
+        function myfun2(){
+            document.getElementById("element2").innerHTML = "output method 2 as inner HTML"
+        }
+       
+        function myfun3(){
+            document.write("output method 3 as document dot write")
+        }
+        
+        function myfun4(){
+            console.log("output method 4 as Console log")
+        }
+        
+
+
+    </script>
+</body>
+</html>
